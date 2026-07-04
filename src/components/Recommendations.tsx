@@ -1,8 +1,7 @@
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
-import { ArrowUpRight } from 'lucide-react'
 import { revealChildren } from '../lib/anim'
-import { profile, recommendations } from '../data/profile'
+import { recommendations } from '../data/profile'
 import SectionHeading from './SectionHeading'
 
 /**
