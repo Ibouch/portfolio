@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
-    "up-latest": "pnpm update --latest"
+    "preview": "pnpm run build && wrangler dev",
+    "up-latest": "pnpm update --latest",
+    "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "^5.2.8",
@@ -26,6 +27,7 @@
     "three": "^0.185.1"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.43.0",
     "@tailwindcss/vite": "^4.3.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
